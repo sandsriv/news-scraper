@@ -30,28 +30,28 @@ Project-Structure:
 -----------------
  1.scraper.
  
- 2  scraper-api  : Artifacts for interfaces & bean classes.
-     --src
-     --target
-     --pom.xml
- 3  scraper-impl : Artifacts for implementation for api interfaces.
-     --src
-     --target
-     --pom.xml
- 4  scraper-rest :  Artifacts for rest controllers.
-     --src
-     --target
-     --pom.xml
- 5. pom.xml
+ 2 scraper-api  : Artifacts for interfaces & bean classes.
+     --src.
+     --target.
+     --pom.xml.
+ 3 scraper-impl : Artifacts for implementation for api interfaces.
+     --src.
+     --target.
+     --pom.xml.
+ 4 scraper-rest :  Artifacts for rest controllers.
+     --src.
+     --target.
+     --pom.xml.
+ 5. pom.xml.
    
 Build & Run The Project:
 ------------------------
 
 DB Scripts SetUP :
 ------------------
-  1. Open the Mysql editor and execute the scripts  @below location
-  2 scraper\scraper-impl\src\main\resources\mysql\01.mysql-db-scripts.sql
-  3 scraper\scraper-impl\src\main\resources\mysql\02.mysql-db-scripts.sql
+  1. Open the Mysql editor and execute the scripts  @below location.
+  2 scraper\scraper-impl\src\main\resources\mysql\01.mysql-db-scripts.sql.
+  3 scraper\scraper-impl\src\main\resources\mysql\02.mysql-db-scripts.sql.
     
    note:
    ------
