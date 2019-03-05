@@ -28,8 +28,9 @@ git Clone :
 
 Project-Structure:
 -----------------
- 1.scraper
- 1.1 scraper-api  : Artifacts for interfaces & bean classes
+ 1.scraper.
+ 
+ 1.1 scraper-api  : Artifacts for interfaces & bean classes.
      --src
      --target
      --pom.xml
@@ -82,12 +83,12 @@ Following End Points are supported:
 
 http://localhost:8082/queryAuthor:  
 ---------------
-This rest end point can be used to search available author by means of applying seacrh filter against name attribute of an author.
-It can consists of 1..* many such criteria filter and displays the authors with articles owned by them.
+1.This rest end point can be used to search available author by means of applying seacrh filter against name attribute of an author.
+  It can consists of 1..* many such criteria filter and displays the authors with articles owned by them.
 
-(method : POST, content-type: application/json)
-sample payload: {"criterias":[{"criterianame":"name","value":"Amitabh","valueList":null}]}
-Description   :  It consists of 1..* criiterias for author name search:
+2. (method : POST, content-type: application/json).
+3. sample payload: {"criterias":[{"criterianame":"name","value":"Amitabh","valueList":null}]}
+4. Description   :  It consists of 1..* criiterias for author name search:
                 {"criterias":[{"criterianame":"name","value":"<<text1>>","valueList":null},
 	                      {"criterianame":"name","value":" <<text2>>","valueList":null},
 	                      .............................
@@ -95,12 +96,13 @@ Description   :  It consists of 1..* criiterias for author name search:
 	
 http://localhost:8082/queryArticles:
 ------
-This rest end point can be used to search available articles by means of applying seacrh filter against title and description attributes of an Articles.
-It can consists of 1..* many such criteria filter and displays the articles alongwith associated authors.
-
-(method : POST, content-type: application/json)
-sample payload: {"criterias":[{"criterianame":"title","value":"River","valueList":null}]}
-Description   :  It consists of 1..* criiterias for author name search:
+1. This rest end point can be used to search available articles by means of applying seacrh filter against title and description  
+   attributes of an Articles.
+   It can consists of 1..* many such criteria filter and displays the articles alongwith associated authors.
+   
+2. (method : POST, content-type: application/json).
+3. sample payload: {"criterias":[{"criterianame":"title","value":"River","valueList":null}]}
+4. Description   :  It consists of 1..* criiterias for author name search:
                 {"criterias":[{"criterianame":"title","value":"River","valueList":null}, 
 		              {"criterianame":"description","value":"novel","valueList":null},
 			      ........................................
@@ -109,26 +111,28 @@ Description   :  It consists of 1..* criiterias for author name search:
 
 http://localhost:8082/searchNews:
 ------
-This rest end point can be used to search available articles or authors by means of applying seacrh filter against title and description attributes of an Articles and name attribute against Authors.
-It can consists of 1..* many such criteria filter and displays the articles alongwith associated authors.
-It consists mix of criterias used for author and articles.
+1. This rest end point can be used to search available articles or authors by means of applying seacrh filter against title and 
+   description attributes of an Articles and name attribute against Authors.
+   It can consists of 1..* many such criteria filter and displays the articles alongwith associated authors.
+   It consists mix of criterias used for author and articles.
 
-(method : POST, content-type: application/json)
-sample payload: {"criterias":[{"criterianame":"title","value":"River","valueList":null},
+2. (method : POST, content-type: application/json).
+3. sample payload: {"criterias":[{"criterianame":"title","value":"River","valueList":null},
                               {"criterianame":"description","value":"novel","valueList":null},
 			      {"criterianame":"name","value":"Rahul","valueList":null}]}
 
-Description   :  It consists of 1..* criiterias for author name search:
+4. Description   :  It consists of 1..* criiterias for author name search:
                 {"criterias":[{"criterianame":"title","value":"River","valueList":null}, 
 		              {"criterianame":"description","value":"novel","valueList":null},
 			      ........................................
 			      {"criterianame":"title","value":"hungry","valueList":null}]}
 
 http://localhost:8082/searchData?newsdata=<searchTxt1>,<searchTxt2>,<searchTxt3>.... ,<searchTxtN>:
-------
-(method : GET, content-type: application/json)
-This rest end point can be used to search available articles or authors by means of applying filter as a plain text passed as querystring.
-The querystring (searchData) consists of comma (,) seperated plain texts values : eg: Chethan,River of Smoke,The Hungry Tide,Amitabh
-It returns all the matched articles and authors and displays the result set.
+-----------
+1. (method : GET, content-type: application/json).
+2. This rest end point can be used to search available articles or authors by means of applying filter as a plain text passed as 
+   querystring.
+3. The querystring (searchData) consists of comma (,) seperated plain texts values : eg: Chethan,River of Smoke,The Hungry Tide,Amitabh
+   It returns all the matched articles and authors and displays the result set.
 
 This is the most simple text search based mechanism used.
