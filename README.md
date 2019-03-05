@@ -30,19 +30,19 @@ Project-Structure:
 -----------------
  1.scraper.
  
- 1.1 scraper-api  : Artifacts for interfaces & bean classes.
+ 2  scraper-api  : Artifacts for interfaces & bean classes.
      --src
      --target
      --pom.xml
- 1.2 scraper-impl : Artifacts for implementation for api interfaces.
+ 3  scraper-impl : Artifacts for implementation for api interfaces.
      --src
      --target
      --pom.xml
- 1.3 scraper-rest :  Artifacts for rest controllers.
+ 4  scraper-rest :  Artifacts for rest controllers.
      --src
      --target
      --pom.xml
- pom.xml
+ 5. pom.xml
    
 Build & Run The Project:
 ------------------------
@@ -50,8 +50,8 @@ Build & Run The Project:
 DB Scripts SetUP :
 ------------------
   1. Open the Mysql editor and execute the scripts  @below location
-  1.1 scraper\scraper-impl\src\main\resources\mysql\01.mysql-db-scripts.sql
-  1.2 scraper\scraper-impl\src\main\resources\mysql\02.mysql-db-scripts.sql
+  2 scraper\scraper-impl\src\main\resources\mysql\01.mysql-db-scripts.sql
+  3 scraper\scraper-impl\src\main\resources\mysql\02.mysql-db-scripts.sql
     
    note:
    ------
@@ -62,9 +62,9 @@ DB Scripts SetUP :
 Code SetUp:
 ------------
 1. via Eclipse : 
-1.1  Clone the project and import the parent project (scraper) as an existing maven project.
-1.2. Build the project using "mvn clean package".
-1.3. Run the Springboot APP main class : NewsScraperAPP
+  Clone the project and import the parent project (scraper) as an existing maven project.
+  Build the project using "mvn clean package".
+  Run the Springboot APP main class : NewsScraperAPP
 
 2. without eclipse : 1. Clone the project and build the parent project (scraper) using "mvn clean install".
                      2. All the parent and child projects should get built successfully.
