@@ -1,0 +1,10 @@
+com\sandipsr\news\scraper\base\criterias\FilterCriteria.class
+com\sandipsr\news\scraper\base\criterias\SearchCriteria.class
+com\sandipsr\news\scraper\articles\api\ArticlesService.class
+com\sandipsr\news\scraper\base\api\Service.class
+com\sandipsr\news\scraper\articles\data\Articles.class
+com\sandipsr\news\scraper\base\annotation\SearchFields.class
+com\sandipsr\news\scraper\author\data\Author.class
+com\sandipsr\news\scraper\error\ErrorCode.class
+com\sandipsr\news\scraper\author\api\AuthorService.class
+com\sandipsr\news\scraper\base\data\BaseResourse.class

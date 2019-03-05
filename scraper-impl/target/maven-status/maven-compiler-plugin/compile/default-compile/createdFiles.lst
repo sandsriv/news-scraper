@@ -1,0 +1,14 @@
+com\sandipsr\news\scraper\articles\dao\ArticlesRepository.class
+com\sandipsr\news\scraper\author\dao\AuthorEntity.class
+com\sandipsr\news\scraper\author\dao\AuthorDao.class
+com\sandipsr\news\scraper\articles\dao\ArticlesEntity.class
+com\sandipsr\news\scraper\author\impl\AuthorServiceImpl.class
+com\sandipsr\news\scraper\base\dao\BaseDaoImpl.class
+com\sandipsr\news\scraper\articles\dao\ArticlesDao.class
+com\sandipsr\news\scraper\author\dao\AuthorRepository.class
+com\sandipsr\news\scraper\config\DBConfiguration.class
+com\sandipsr\news\scraper\articles\impl\ArticlesServiceImpl.class
+com\sandipsr\news\scraper\articles\dao\impl\ArticlesDaoImpl.class
+com\sandipsr\news\scraper\author\dao\impl\AuthorDaoImpl.class
+com\sandipsr\news\scraper\base\dao\BaseDao.class
+com\sandipsr\news\scraper\base\dao\BaseEntity.class

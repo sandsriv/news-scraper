@@ -1,0 +1,6 @@
+com\sandipsr\news\scraper\app\NewsScraperAPP.class
+com\sandipsr\news\scraper\rest\controller\ArticlesServiceRestController.class
+com\sandipsr\news\scraper\rest\controller\GenericServiceRestController.class
+com\sandipsr\news\scraper\rest\controller\AuthorServiceRestController.class
+com\sandipsr\news\scraper\rest\response\RestResponse.class
+com\sandipsr\news\scraper\rest\controller\BaseController.class
